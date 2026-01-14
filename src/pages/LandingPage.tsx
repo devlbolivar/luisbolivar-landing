@@ -12,7 +12,7 @@ import { FinalCTA } from '@/sections/FinalCTA';
 
 export function LandingPage() {
     return (
-        <main>
+        <main className="bg-slate-950 min-h-screen">
             <Hero />
             <Problem />
             <Solution />

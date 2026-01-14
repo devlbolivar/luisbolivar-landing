@@ -3,9 +3,9 @@ import { useState } from "react"
 
 export function FAQ() {
     return (
-        <section id="faq" className="py-24 bg-background">
+        <section id="faq" className="py-24 bg-slate-900">
             <div className="container px-4 md:px-6 mx-auto max-w-3xl">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
                     Preguntas Frecuentes
                 </h2>
 
@@ -28,7 +28,7 @@ export function FAQ() {
                     />
                     <FAQItem
                         question="¿Cuándo veo resultados?"
-                        answer="En 7 días calendario el sistema está funcionando en producción. Sin largas esperas."
+                        answer="En 15 días calendario el sistema está funcionando en producción. Sin largas esperas."
                     />
                 </div>
             </div>
@@ -40,16 +40,16 @@ function FAQItem({ question, answer }: { question: string, answer: string }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="border border-border rounded-lg overflow-hidden">
+        <div className="border border-slate-800 rounded-lg overflow-hidden">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="w-full flex items-center justify-between p-4 text-left font-medium hover:bg-muted/50 transition-colors"
+                className="w-full flex items-center justify-between p-4 text-left font-medium text-slate-200 hover:bg-slate-800 transition-colors"
             >
                 {question}
                 {isOpen ? <Minus className="h-4 w-4 shrink-0" /> : <Plus className="h-4 w-4 shrink-0" />}
             </button>
             {isOpen && (
-                <div className="p-4 pt-0 text-muted-foreground text-sm animate-in slide-in-from-top-2">
+                <div className="p-4 pt-0 text-slate-400 text-sm animate-in slide-in-from-top-2">
                     {answer}
                 </div>
             )}

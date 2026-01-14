@@ -68,7 +68,7 @@ export function Transformation() {
             <div className="container px-4 md:px-6 mx-auto">
                 <div className="text-center mb-16 space-y-4">
                     <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
-                        Automatizaciones que te devuelven control en 7 días
+                        Automatizaciones que te devuelven control en 15 días
                     </h2>
                 </div>
 

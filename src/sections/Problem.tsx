@@ -30,25 +30,25 @@ export function Problem() {
     ];
 
     return (
-        <section className="py-20 bg-muted/30">
+        <section className="py-20 bg-slate-950">
             <div className="container px-4 md:px-6 mx-auto">
                 <div className="text-center mb-16 space-y-4">
-                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
+                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white">
                         El problema que sientes todos los días
                     </h2>
-                    <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                    <p className="text-slate-400 text-lg max-w-2xl mx-auto">
                         Tienes tráfico, tienes leads, pero el proceso operativo te está costando ventas.
                     </p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
                     {painPoints.map((point, index) => (
-                        <div key={index} className="bg-card border border-border/50 hover:border-destructive/30 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
-                            <div className="mb-4 bg-destructive/10 w-fit p-3 rounded-lg">
+                        <div key={index} className="bg-slate-900 border border-slate-800 hover:border-red-500/30 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                            <div className="mb-4 bg-red-500/10 w-fit p-3 rounded-lg">
                                 {point.icon}
                             </div>
-                            <h3 className="font-semibold text-xl mb-2">{point.title}</h3>
-                            <p className="text-muted-foreground text-sm">{point.description}</p>
+                            <h3 className="font-semibold text-xl mb-2 text-white">{point.title}</h3>
+                            <p className="text-slate-400 text-sm">{point.description}</p>
                         </div>
                     ))}
                     <div className="bg-destructive/5 border border-destructive/20 p-6 rounded-xl flex items-center justify-center text-center">
