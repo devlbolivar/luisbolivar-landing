@@ -3,22 +3,22 @@ import { Briefcase, Home, Stethoscope, ShoppingBag, ArrowRight } from 'lucide-re
 export function UseCases() {
     const cases = [
         {
-            icon: <Briefcase className="w-8 h-8 text-primary" />,
+            icon: <Briefcase className="w-8 h-8 text-emerald-400" />,
             title: "Agencias de Marketing",
             items: ["Leads automáticos", "Asignación round-robin", "Follow-up inmediato"]
         },
         {
-            icon: <Home className="w-8 h-8 text-primary" />,
+            icon: <Home className="w-8 h-8 text-emerald-400" />,
             title: "Inmobiliarias",
             items: ["Prospección 24/7", "Agenda automática", "Recordatorios de visita"]
         },
         {
-            icon: <Stethoscope className="w-8 h-8 text-primary" />,
+            icon: <Stethoscope className="w-8 h-8 text-emerald-400" />,
             title: "Clínicas / Salud",
             items: ["Reservas de cita", "Confirmaciones WhatsApp", "Recuperación de no-shows"]
         },
         {
-            icon: <ShoppingBag className="w-8 h-8 text-primary" />,
+            icon: <ShoppingBag className="w-8 h-8 text-emerald-400" />,
             title: "E-commerce",
             items: ["Tickets de soporte", "Status de pedido", "Reportes de ventas"]
         }
@@ -40,7 +40,7 @@ export function UseCases() {
                             <ul className="space-y-2">
                                 {useCase.items.map((item, i) => (
                                     <li key={i} className="flex items-center gap-2 text-sm text-slate-400">
-                                        <ArrowRight className="w-3 h-3 text-emerald-500/50" />
+                                        <ArrowRight className="w-3 h-3 text-emerald-400" />
                                         {item}
                                     </li>
                                 ))}

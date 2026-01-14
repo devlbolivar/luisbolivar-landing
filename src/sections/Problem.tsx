@@ -3,27 +3,27 @@ import { AlertTriangle, Clock, Users, FileX, ShieldAlert } from 'lucide-react';
 export function Problem() {
     const painPoints = [
         {
-            icon: <Clock className="w-6 h-6 text-destructive" />,
+            icon: <Clock className="w-6 h-6 text-red-500" />,
             title: "Los leads entran y se enfrían",
             description: "Cada minuto que pasa sin respuesta, la probabilidad de conversión cae drásticamente."
         },
         {
-            icon: <Users className="w-6 h-6 text-destructive" />,
+            icon: <Users className="w-6 h-6 text-red-500" />,
             title: "Nadie sabe quién respondió",
             description: "El equipo se pisa las mangueras o, peor aún, nadie contesta pensando que otro lo hizo."
         },
         {
-            icon: <AlertTriangle className="w-6 h-6 text-destructive" />,
+            icon: <AlertTriangle className="w-6 h-6 text-red-500" />,
             title: "Tu WhatsApp es tu CRM",
             description: "Información aislada en chats individuales. Si se pierde el celular, se pierde el negocio."
         },
         {
-            icon: <FileX className="w-6 h-6 text-destructive" />,
+            icon: <FileX className="w-6 h-6 text-red-500" />,
             title: "Reportes manuales, tarde y mal",
             description: "Pierdes horas copiando datos a Excel que ya están obsoletos cuando terminas."
         },
         {
-            icon: <ShieldAlert className="w-6 h-6 text-destructive" />,
+            icon: <ShieldAlert className="w-6 h-6 text-red-500" />,
             title: "Todo depende de ti",
             description: "Si tú no estás encima, el sistema se cae. Eres el cuello de botella de tu propio crecimiento."
         }
@@ -52,7 +52,7 @@ export function Problem() {
                         </div>
                     ))}
                     <div className="bg-destructive/5 border border-destructive/20 p-6 rounded-xl flex items-center justify-center text-center">
-                        <p className="text-lg font-medium text-destructive">
+                        <p className="text-lg font-medium text-red-500">
                             "No es falta de esfuerzo.<br />Es falta de sistema."
                         </p>
                     </div>

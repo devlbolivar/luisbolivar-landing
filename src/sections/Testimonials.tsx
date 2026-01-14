@@ -3,7 +3,7 @@ import { TrendingUp, Clock, UserCheck } from 'lucide-react';
 export function Testimonials() {
     const metrics = [
         {
-            icon: <Clock className="w-8 h-8 text-primary" />,
+            icon: <Clock className="w-8 h-8 text-emerald-400" />,
             value: "3-10",
             label: "Horas ahorradas / semana"
         },

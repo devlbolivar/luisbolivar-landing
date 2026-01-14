@@ -81,7 +81,7 @@ export function Transformation() {
                             <div className="p-6 grid gap-6">
                                 <div className="space-y-2">
                                     <div className="flex items-start gap-3 text-muted-foreground/80">
-                                        <XCircle className="w-5 h-5 text-destructive shrink-0 mt-0.5" />
+                                        <XCircle className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
                                         <div className="space-y-1">
                                             <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Antes</span>
                                             <p className="text-sm">{item.before}</p>
@@ -92,7 +92,7 @@ export function Transformation() {
                                     <div className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
                                         <div className="space-y-1">
-                                            <span className="text-xs font-bold uppercase tracking-wider text-green-600">Después</span>
+                                            <span className="text-xs font-bold uppercase tracking-wider text-green-500">Después</span>
                                             <p className="text-sm font-medium">{item.after}</p>
                                         </div>
                                     </div>
