@@ -8,14 +8,13 @@ import { UseCases } from '@/sections/UseCases';
 import { Testimonials } from '@/sections/Testimonials';
 import { FAQ } from '@/sections/FAQ';
 import { FinalCTA } from '@/sections/FinalCTA';
-import { Transformation } from '@/sections/Transformation';
+
 
 export function LandingPage() {
     return (
         <main>
             <Hero />
             <Problem />
-            <Transformation />
             <Solution />
             <UseCases />
             <SprintDetails />
